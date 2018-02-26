@@ -22,7 +22,7 @@ function loadData() {
   $body.append('<img class="bgimg" src="' + streetviewUrl + '">');
 
   //NY TImes Ajax request
-  var KEY_NY = 'd57b4b6501384c5cbff63047c6aa6a53';
+  var KEY_NY = '';
   var nytimesUrl = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
     cityStr + '&sort=newest&api-key=' + KEY_NY;
   $.getJSON(nytimesUrl, function(data) {
